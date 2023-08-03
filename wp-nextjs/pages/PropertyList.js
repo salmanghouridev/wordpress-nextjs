@@ -1,6 +1,11 @@
 import Link from 'next/link';
 
 export default function PropertyList({ properties }) {
+  // Check if 'properties' is defined and is an array
+  if (!properties || !Array.isArray(properties)) {
+    return <div>No properties available.</div>;
+  }
+
   return (
     <div>
       <h1>Properties</h1>
