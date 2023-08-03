@@ -13,7 +13,7 @@ export default function Home({ posts, properties }) {
         <title>Home Page</title>
       </Head>
       <div>
-      {/* <BlogList posts={posts} /> */}
+      <BlogList posts={posts} />
       </div>
       <div>
         <PropertyList properties={properties} />
